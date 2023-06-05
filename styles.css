@@ -25,7 +25,7 @@ body {
     line-height: 1.5;
 }
 
-/* Take it further - Example animations */
+/* Take it further  */
 h1 {
     animation: fadeIn 1s ease-in-out;
 }
