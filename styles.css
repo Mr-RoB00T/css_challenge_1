@@ -1,0 +1,107 @@
+/* Type selector */
+body {
+    color: #333;
+    font-family: Arial, sans-serif;
+}
+
+/* Class selector */
+.wrapper {
+    background-color: #f2f2f2;
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    animation: slideIn 1s ease-in-out;
+}
+
+/* ID selector */
+#special-heading {
+    font-weight: bold;
+}
+
+/* Descendant selector */
+.wrapper p {
+    color: initial;
+    line-height: 1.5;
+}
+
+/* Take it further - Example animations */
+h1 {
+    animation: fadeIn 1s ease-in-out;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+h2 {
+    animation: rotateIn 1s ease-in-out;
+}
+
+@keyframes rotateIn {
+    0% {
+        opacity: 0;
+        transform: rotateY(-180deg);
+    }
+    100% {
+        opacity: 1;
+        transform: rotateY(0);
+    }
+}
+
+footer {
+    animation: bounceIn 1s ease-in-out;
+}
+
+@keyframes bounceIn {
+    0% {
+        opacity: 0;
+        transform: scale(0.5);
+    }
+    70% {
+        opacity: 1;
+        transform: scale(1.2);
+    }
+    100% {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+/* List styling - every odd bullet point bold */
+li:nth-child(odd) {
+    font-weight: bold;
+}
+
+/* Additional animations */
+@keyframes slideIn {
+    0% {
+        transform: translateX(-100%);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.2);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+h3 {
+    animation: pulse 2s infinite ease-in-out;
+}
